@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasanthi Poli - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+  html, body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(to right,orange,red
+      );
+    }
+    .carousel-item img {
+      max-height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .highlight-box {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      padding: 16px;
+      border-radius: 0.5rem;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top color-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="color: black;">Prasanthi poli</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item"><a class="nav-link" href="#about" style="color: black;">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#education" style="color: black;">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" style="color: black;">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" style="color: black;">Projects</a></li>
+      
+          <li class="nav-item"><a class="nav-link" href="#experience" style="color: black;">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" style="color: black;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section id="about" class="bg-light">
+  <div class="container text-center">
+   <div style="display: flex;">
+    <div><img src="./passport size photo.jpg" alt="" height="200" width="200" style="border-radius: 100%; margin: auto;"></div>
+    <div>
+        <h2>About Me</h2>
+      <p>I am Poli Prasanthi, an aspiring Software Developer currently pursuing a B.Tech in Electronics and Communication Engineering with a strong academic record. I have foundational knowledge in Java, practical experience in SQL and web development (HTML/CSS/JavaScript), and a growing interest in embedded systems and IoT.   </p>
+      <p>Through internships and self-initiated projects, I’ve worked on real-time automation solutions using Arduino, sensors, and microcontrollers. I’m a quick learner, problem-solver, and team player with a passion for applying my skills to innovative, real-world challenges.  </p>
+    </div>
+    </div>
+     <div class="highlight-box" style="margin-top: 30px;">
+          <strong>Currently Learning:</strong> Java Script , Java <br>
+          <strong>Career Objective:</strong> To work in a challenging role where I can contribute meaningfully to innovative projects and continuously grow as a software engineer.<br>
+          <strong>Achievements:</strong>Won First prize in project expo at Annamacharya Institue Rajampeta, QSpiders Java Full Stack Incubation
+        </div>
+  </div>
+</section>
+<section id="education" class="py-5 bg-light" >
+  <div class="container">
+    <h2 class="text-center mb-4">🎓 Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon bg-primary text-white" style="margin:10px;">
+          <pre> <i class="bi bi-mortarboard-fill"></i></pre>
+        </div>
+        <div class="timeline-content shadow-sm p-4 bg-white rounded" style="margin:10px;">
+          <h4>Bachelor of Technology (B.Tech) – Electronics and Communication Engineering </h4>
+          <p><strong>Institution :</strong> Siddharth Institute of Engineering and Technology<br>
+          <strong>Duration :</strong> 2021 – 2025</p>
+          <span class="badge bg-success">Java</span>
+          <span class="badge bg-info text-dark">Embedded System</span>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="timeline-item">
+        <div class="timeline-icon bg-secondary text-white" style="margin:10px;">
+          <pre> <i class="bi bi-journal-code"></i></pre>
+        </div>
+        <div class="timeline-content shadow-sm p-4 bg-white rounded" style="margin:10px;"">
+          <h4>Intermediate in MPC</h4>
+          <p><strong>Institution:</strong>Sri Chaitanya JR College<br>
+          <strong>Duration:</strong> 2019 – 2021</p>
+        </div>
+      </div>
+
+      <!-- School -->
+      <div class="timeline-item">
+        <div class="timeline-icon bg-danger text-white" >
+          <pre> <i class="bi bi-pencil-square"></i></pre>
+        </div>
+        <div class="timeline-content shadow-sm p-4 bg-white rounded">
+          <h4>SSC (10th Standard)</h4>
+          <p><strong>School:</strong> Nalanda E.M High School<br>
+          <strong>Year of Completion:</strong> 2019</p>
+          <span class="badge bg-success">Mathematics</span>
+          <span class="badge bg-secondary">Science</span>
+          <span class="badge bg-info text-dark">Social</span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row text-center mb-4">
+      <div class="col-md-4">
+        <h5>Frontend</h5>
+        <div class="mb-2" data-bs-toggle="tooltip" title="HTML5, CSS3, Bootstrap">
+          <i class="bi bi-filetype-html fs-3 text-danger"></i>
+          <i class="bi bi-filetype-css fs-3 text-primary"></i>
+          <i class="bi bi-bootstrap-fill fs-3 text-purple"></i>
+        </div>
+        <p>HTML, CSS, Bootstrap, JavaScript</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Backend</h5>
+        <div class="mb-2" data-bs-toggle="tooltip" title="Java">
+          <i class="bi bi-code-square fs-3 text-success"></i>
+        </div>
+        <p>Java</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Tools & DB</h5>
+        <div class="mb-2" data-bs-toggle="tooltip" title="SQL">
+          <i class="bi bi-database fs-3 text-info"></i>
+          <i class="bi bi-git fs-3 text-warning"></i>
+          <i class="bi bi-box-seam fs-3 text-secondary"></i>
+        </div>
+        <p>SQL, VSCode, Eclipse</p>
+      </div>
+    </div>
+    <div class="mt-4">
+      <p>Core Java</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 85%">85%</div>
+      </div>
+     
+      <p>Web Technologies(HTML5,CSS3,JavaScript)</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%">85%</div>
+      </div>
+      <p>SQL</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%">90%</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <p class="text-center mb-5">
+      Here are some of the most impactful and technically challenging projects I've developed, showcasing my skills in Embedded systems, automation .
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+      <h5 class="card-title">🍽️ Static Food Website</h5>
+      <p class="card-text">
+        Created a visually appealing <strong>static food website</strong> using HTML, CSS. The site includes structured sections like menu, about, contact, and project highlights, demonstrating frontend development skills.
+      </p>
+      <ul>
+        <li>Designed a clean static layout with HTML5 and CSS3</li>
+        <li>Added project cards, highlights, contact form, and navbar</li>
+        <li>Focused on visual hierarchy, consistency, and simple interactivity</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-secondary">Static Website</span>
+      <a href="./Food Website/foodwebsite.html" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+      <h5 class="card-title">🎬 YouTube Clone (Static)</h5>
+      <p class="card-text">
+        Designed and developed a <strong>static clone of YouTube</strong> using HTML, CSS, and Font Awesome. The layout replicates YouTube's navigation bar, sidebar, video grid, and categories for practice in frontend structure and UI design.
+      </p>
+      <ul>
+        <li>Responsive top navbar with search and user icons</li>
+        <li>Sidebar with sections like Home, Trending, Library</li>
+        <li>Embedded videos in a responsive grid layout</li>
+        <li>Category bar navigation using anchor links</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-info text-dark">Font Awesome</span>
+      <span class="badge bg-secondary">Static Website</span>
+      <span class="badge bg-dark">UI Clone</span>
+      <a href="./Youtube/youtube.html" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+
+    </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+      <h5 class="card-title">🌍 Travel_through_the_dreams</h5>
+      <p class="card-text">
+        Created a visually appealing <strong>static travel website</strong> that showcases popular tourist destinations in India using HTML and CSS. Includes a modern navigation bar, responsive layout, and animated flip cards for a more engaging UI.
+      </p>
+      <ul>
+        <li>Custom navigation bar with external travel links</li>
+        <li>Responsive destination grid with images and info</li>
+        <li>Animated flip cards for recommended places</li>
+        <li>Stylish layout using pure HTML and CSS</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-secondary">Static Website</span>
+      <span class="badge bg-dark">Travel Theme</span>
+      <a href="./travel_webpage/travel.html" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+
+    </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+      <h5 class="card-title">🧮 Calculator UI</h5>
+      <p class="card-text">
+        Built a <strong>simple, responsive calculator</strong> interface using HTML, CSS, and JavaScript. It supports all basic arithmetic operations and includes additional features like percentage, decimal input, and clear/delete functions.
+      </p>
+      <ul>
+        <li>Clean UI design with modern button layout</li>
+        <li>Supports operations: +, −, ×, ÷, %, decimals</li>
+        <li>Clear (AC) and backspace (←) functionality</li>
+        <li>Built with pure JavaScript logic</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-success">JavaScript</span>
+      <span class="badge bg-dark">UI/UX</span>
+      <span class="badge bg-info text-dark">Responsive</span>
+      <a href="./Java Script/calculator.html" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+
+    </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+      <h5 class="card-title">🛒 E-Commerce Website</h5>
+      <p class="card-text">
+        Developed a feature-rich <strong>eCommerce web application</strong> with essential user and shopping functionalities. Users can browse products, register/login, add items to their cart, and simulate a checkout process.
+      </p>
+      <ul>
+        <li>User authentication: <strong>Login & Register</strong> pages</li>
+        <li>Dynamic <strong>product listing</strong> with categories</li>
+        <li><strong>Shopping cart</strong> with quantity management</li>
+        <li>Responsive layout for mobile & desktop</li>
+        <li>Modern UI with clean navigation</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-success">JavaScript</span>
+      <span class="badge bg-info text-dark">Responsive</span>
+      <span class="badge bg-dark">UI/UX</span>
+      <a href="./jsProject/jsFiles/login.html" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+
+    </div>
+  </div>
+</div>
+      <div class="col-md-6" style="margin: 20px auto;" >
+        <div class="card shadow-sm h-100" >
+            <div class="card-body" >
+                <h5 class="card-title">Smart Poultry Farm System (IoT + DL)</h5>
+                <p class="card-text">
+                    Contributed to a smart poultry monitoring system using <strong>Arduino</strong>, <strong>CNN</strong>, and <strong>CatBoost</strong> for behavior analysis and environmental control, improving productivity and safety.
+                </p>
+                <ul>
+                    <li>Assembled and wired sensor networks for farm environment monitoring</li>
+                    <li>Collaborated with software team for model integration and testing</li>
+                    <li>Improved livestock care with real-time automation and alerts</li>
+                </ul>
+                <span class="badge bg-success">Arduino</span>
+                <span class="badge bg-primary">CNN</span>
+                <span class="badge bg-warning text-dark">CatBoost</span>
+                <span class="badge bg-dark">IoT</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section id="highlights" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Extra Highlights</h2>
+    <p class="text-center mb-5">Some of the proud milestones and credentials I’ve earned during my academic and professional journey.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card border-start border-5 border-primary shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">📄 Research Paper – IEEE ICEIEC 2025</h5>
+            <p class="card-text">
+              Published a research paper titled <strong>“An Intelligent IoT-Enabled Poultry Farm System Using Deep Learning”</strong> at IEEE ICEIEC 2025, proposing an IoT-integrated deep learning model to automate and optimize poultry farm environments using CNN and CatBoost algorithms.
+            </p>
+            <span class="badge bg-secondary">IoT</span>
+            <span class="badge bg-info text-dark">Deep Learning</span>
+            <span class="badge bg-success">CNN</span>
+            <span class="badge bg-warning text-dark">CatBoost</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card border-start border-5 border-success shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🏅 Project Expo – Annamacharya Institute, Rajampet</h5>
+            <p class="card-text">
+              Secured <strong>1st Prize</strong> at the Project Expo hosted by Annamacharya Institute, Rajampet, for developing an <strong>Automatic Soil Irrigation System using Arduino</strong>. The project automates water supply based on soil moisture levels to promote sustainable farming.
+            </p>
+            <span class="badge bg-primary">Arduino</span>
+            <span class="badge bg-info text-dark">IoT</span>
+            <span class="badge bg-warning text-dark">Soil Moisture</span>
+          </div>
+       </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card border-start border-5 border-success shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🎓 Software Development Training - QSpiders</h5>
+            <p class="card-text">
+              Selected for a free incubation program at QSpiders where I received hands-on training in core Java, Selenium, SQL, and manual testing methodologies to build a strong software testing foundation.
+            </p>
+            <span class="badge bg-primary">Java</span>
+            <span class="badge bg-danger">Development</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-start border-5 border-primary shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🔧 Embedded Systems Intern - Ekalavya Innovative Solutions</h5>
+            <p class="card-text">
+              Completed a 1-month internship focused on embedded systems design, gaining hands-on experience with PCB layout, circuit simulation, and sensor interfacing using Arduino. Strengthened skills in Embedded C programming and real-time troubleshooting.
+            </p>
+            <span class="badge bg-secondary">Embedded Systems</span>
+            <span class="badge bg-success">Internship</span>
+            <span class="badge bg-dark">Arduino</span>
+            <span class="badge bg-warning text-dark">PCB Design</span>
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">💼 Experience</h2>
+      <div class="card mb-4 shadow-sm border-start border-4 border-success">
+        <div class="card-body">
+            <h4 class="card-title">Embedded Systems Intern – Ekalavya Innovative Solutions Pvt. Ltd.</h4>
+            <h6 class="text-muted">1 Month Internship | Tirupati, India</h6>
+            <p class="card-text">
+              • Gained hands-on experience in embedded systems design including PCB layout and circuit simulation.<br>
+              • Worked with Arduino and sensor interfacing for real-time applications.<br>
+              • Strengthened Embedded C programming and troubleshooting skills through practical tasks and hardware integration.
+            </p>
+            <span class="badge bg-dark">Embedded Systems</span>
+            <span class="badge bg-warning text-dark">PCB Design</span>
+            <span class="badge bg-success">Arduino</span>
+            <span class="badge bg-secondary">Internship</span>
+        </div>
+      </div>
+
+    <div class="card mb-4 shadow-sm border-start border-4 border-success">
+      <div class="card-body">
+        <h4 class="card-title">Java Full Stack Trainee – QSpiders Training Institute</h4>
+        <h6 class="text-muted">March 2025 – Present</h6>
+        <p class="card-text">
+          • Selected through a free incubation program and received rigorous training in Java, Spring Boot, HTML, CSS, and SQL.<br>
+          • Developed full-stack applications as part of capstone projects with guidance from senior mentors.<br>
+          • Improved backend performance and wrote clean, scalable code adhering to industry standards.
+        </p>
+        <span class="badge bg-primary">Java</span>
+        <span class="badge bg-warning text-dark">Web Technologies</span>
+        <span class="badge bg-dark">SQL</span>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm border-start border-4 border-danger">
+      <div class="card-body">
+        <h4 class="card-title">Project Contributor – Intelligent IoT-Enabled Poultry Farm System</h4>
+        <h6 class="text-muted">Jan 2025 – Apr 2025</h6>
+        <p class="card-text">
+          • Developed a smart poultry farm system integrating sensors and Arduino controllers.<br>
+          • Collaborated with software and hardware teams to implement automation using CNN and CatBoost models.<br>
+          • Enabled real-time environmental monitoring and intelligent decision-making for poultry management.
+        </p>
+        <span class="badge bg-success">IoT</span>
+        <span class="badge bg-dark">Arduino</span>
+        <span class="badge bg-primary">CNN</span>
+        <span class="badge bg-warning text-dark">CatBoost</span>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">📬 Contact Me</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-5 text-center">
+      <div class="col-md-4 mb-3">
+        <i class="bi bi-envelope fs-3 text-primary"></i>
+        <p class="mb-0">Email</p>
+        <p><a href="mailto:poliprasanthi2003@gmail.com">poliprasanthi2003@gmail.com</a></p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <i class="bi bi-telephone fs-3 text-success"></i>
+        <p class="mb-0">Phone</p>
+        <p>+91 9866461609</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <i class="bi bi-geo-alt fs-3 text-danger"></i>
+        <p class="mb-0">Location</p>
+        <p>Tirupati, Andhra Pradesh, India</p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="./prasanthi resume new.pdf" class="btn btn-outline-dark btn-lg" target="_blank">
+        <i class="bi bi-download me-2"></i>Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 P.Prasanthi. All Rights Reserved.
+  </footer>
+</body>
+</html>
