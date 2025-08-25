@@ -3,31 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saved Messages</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Messages (Password Protected)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #login-box {
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #f4f4f4;
+    }
+  </style>
 </head>
 <body>
-  <div class="container my-5">
-    <h2 class="text-center mb-4">📩 Saved Messages</h2>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead class="table-dark">
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Message</th>
-          </tr>
-        </thead>
-        <tbody id="data-body">
-          <!-- Data will load here -->
-        </tbody>
-      </table>
-    </div>
-    <div class="text-center mt-4">
-      <a href="index.html" class="btn btn-primary">⬅ Back to Portfolio</a>
-    </div>
+
+  <!-- Login Screen -->
+  <div id="login-box">
+    <h2>Enter Password to View Messages</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Login</button>
+    <p id="error" style="color: red;"></p>
   </div>
-  <script src="./data.js"></script>
+
+  <!-- Messages Section (Hidden until login) -->
+  <div id="messages-section" style="display: none;">
+    <h1>Stored Messages</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody id="messageTableBody"></tbody>
+    </table>
+  </div>
+
+  <script>
+    // Set your password here
+    const correctPassword = "admin123";  
+
+    function checkPassword() {
+      const enteredPassword = document.getElementById("passwordInput").value;
+      if (enteredPassword === correctPassword) {
+        document.getElementById("login-box").style.display = "none";
+        document.getElementById("messages-section").style.display = "block";
+        loadMessages();
+      } else {
+        document.getElementById("error").innerText = "Incorrect Password!";
+      }
+    }
+
+    function loadMessages() {
+      let storedData = JSON.parse(localStorage.getItem("contactData")) || [];
+      let tableBody = document.getElementById("messageTableBody");
+      tableBody.innerHTML = "";
+
+      if (storedData.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="3">No messages found.</td></tr>`;
+        return;
+      }
+
+      storedData.forEach((msg, index) => {
+        let row = `<tr>
+          <td>${msg.name}</td>
+          <td>${msg.email}</td>
+          <td>${msg.message}</td>
+        </tr>`;
+        tableBody.innerHTML += row;
+      });
+    }
+  </script>
 </body>
 </html>
-
