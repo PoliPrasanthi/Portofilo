@@ -13,9 +13,21 @@
       text-align: center;
       margin-top: 100px;
     }
-    input {
-      padding: 8px;
-      margin: 5px;
+    .password-wrapper {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+    }
+    .password-wrapper input {
+      padding-right: 35px;
+    }
+    .toggle-eye {
+      position: absolute;
+      right: 8px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 18px;
+      color: #555;
     }
     table {
       border-collapse: collapse;
@@ -30,6 +42,36 @@
     th {
       background: #f4f4f4;
     }
+    .btn {
+      display: inline-block;
+      background: #4facfe;
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      cursor: pointer;
+      margin: 5px;
+      border: none;
+    }
+    .btn:hover {
+      background: #00c6ff;
+    }
+    .btn:active {
+      transform: scale(0.95);
+    }
+    .btn-danger {
+      background: #f44336;
+    }
+    .btn-danger:hover {
+      background: #d32f2f;
+    }
+    .text-center {
+      text-align: center;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -37,8 +79,12 @@
   <!-- Login Screen -->
   <div id="login-box">
     <h2>Enter Password to View Messages</h2>
-    <input type="password" id="passwordInput" placeholder="Enter password">
-    <button onclick="checkPassword()">Login</button>
+    <div class="password-wrapper">
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <span class="toggle-eye" onclick="togglePassword()">👁</span>
+    </div>
+    <br>
+    <button onclick="checkPassword()" class="btn">Login</button>
     <p id="error" style="color: red;"></p>
   </div>
 
@@ -51,18 +97,19 @@
           <th>Name</th>
           <th>Email</th>
           <th>Message</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody id="messageTableBody"></tbody>
     </table>
-     <div class="text-center mt-4">
-      <a href="index.html" class="btn btn-primary">⬅ Back to Portfolio</a>
+
+    <div class="text-center">
+      <a href="index.html" class="btn">⬅ Back to Portfolio</a>
+      <button onclick="clearMessages()" class="btn btn-danger">🗑 Clear All</button>
     </div>
   </div>
- 
 
   <script>
-    // Set your password here
     const correctPassword = "Santhi@2003";  
 
     function checkPassword() {
@@ -76,13 +123,26 @@
       }
     }
 
+    // 👁 Toggle password visibility
+    function togglePassword() {
+      const input = document.getElementById("passwordInput");
+      const eye = document.querySelector(".toggle-eye");
+      if (input.type === "password") {
+        input.type = "text";
+        eye.textContent = "🙈";
+      } else {
+        input.type = "password";
+        eye.textContent = "👁";
+      }
+    }
+
     function loadMessages() {
       let storedData = JSON.parse(localStorage.getItem("contactData")) || [];
       let tableBody = document.getElementById("messageTableBody");
       tableBody.innerHTML = "";
 
       if (storedData.length === 0) {
-        tableBody.innerHTML = `<tr><td colspan="3">No messages found.</td></tr>`;
+        tableBody.innerHTML = `<tr><td colspan="4">No messages found.</td></tr>`;
         return;
       }
 
@@ -91,12 +151,26 @@
           <td>${msg.name}</td>
           <td>${msg.email}</td>
           <td>${msg.message}</td>
+          <td><button class="btn btn-danger" onclick="deleteMessage(${index})">Delete</button></td>
         </tr>`;
         tableBody.innerHTML += row;
       });
     }
+
+    // ✅ Clear all messages
+    function clearMessages() {
+      localStorage.removeItem("contactData");
+      loadMessages();
+      alert("All messages cleared!");
+    }
+
+    // ✅ Delete a single message
+    function deleteMessage(index) {
+      let storedData = JSON.parse(localStorage.getItem("contactData")) || [];
+      storedData.splice(index, 1); // remove that message
+      localStorage.setItem("contactData", JSON.stringify(storedData));
+      loadMessages();
+    }
   </script>
 </body>
 </html>
-
-
