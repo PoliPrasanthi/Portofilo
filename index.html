@@ -6,6 +6,9 @@
   <title>Prasanthi Poli - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papq7+... (full hash)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
   html, body {
       scroll-behavior: smooth;
@@ -14,6 +17,15 @@
     .navbar {
       background: linear-gradient(to right,orange,red
       );
+    }
+    #contactForm .col-12.text-center {
+  margin-top: 0 !important; /* remove Bootstrap's extra gap */
+}
+    .col-md-6 {
+    min-height: 300px; /* adjust height as you like */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
     .carousel-item img {
       max-height: 300px;
@@ -124,191 +136,229 @@
     </div>
   </div>
 </section>
-<section id="skills">
-  <div class="container">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row text-center mb-4">
-      <div class="col-md-4">
-        <h5>Frontend</h5>
-        <div class="mb-2" data-bs-toggle="tooltip" title="HTML5, CSS3, Bootstrap">
-          <i class="bi bi-filetype-html fs-3 text-danger"></i>
-          <i class="bi bi-filetype-css fs-3 text-primary"></i>
-          <i class="bi bi-bootstrap-fill fs-3 text-purple"></i>
-        </div>
-        <p>HTML, CSS, Bootstrap, JavaScript</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Backend</h5>
-        <div class="mb-2" data-bs-toggle="tooltip" title="Java">
-          <i class="bi bi-code-square fs-3 text-success"></i>
-        </div>
-        <p>Java</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Tools & DB</h5>
-        <div class="mb-2" data-bs-toggle="tooltip" title="SQL">
-          <i class="bi bi-database fs-3 text-info"></i>
-          <i class="bi bi-git fs-3 text-warning"></i>
-          <i class="bi bi-box-seam fs-3 text-secondary"></i>
-        </div>
-        <p>SQL, VSCode, Eclipse</p>
-      </div>
-    </div>
-    <div class="mt-4">
-      <p>Core Java</p>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 85%">85%</div>
-      </div>
-     
-      <p>Web Technologies(HTML5,CSS3,JavaScript)</p>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%">85%</div>
-      </div>
-      <p>SQL</p>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%">90%</div>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="projects" class="bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-4">Projects</h2>
     <p class="text-center mb-5">
       Here are some of the most impactful and technically challenging projects I've developed, showcasing my skills in Embedded systems, automation .
     </p>
-    <div class="row g-4">
+    <div class="row g-4" id="project-list">
+      
+      <!-- Project 1 -->
       <div class="col-md-6">
-  <div class="card shadow-sm h-100">
-    <div class="card-body">
-      <h5 class="card-title">🍽️ Static Food Website</h5>
-      <p class="card-text">
-        Created a visually appealing <strong>static food website</strong> using HTML, CSS. The site includes structured sections like menu, about, contact, and project highlights, demonstrating frontend development skills.
-      </p>
-      <ul>
-        <li>Designed a clean static layout with HTML5 and CSS3</li>
-        <li>Added project cards, highlights, contact form, and navbar</li>
-        <li>Focused on visual hierarchy, consistency, and simple interactivity</li>
-      </ul>
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-warning text-dark">CSS</span>
-      <span class="badge bg-secondary">Static Website</span>
-      <a href="https://poliprasanthi.github.io/Food-website/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
-    </div>
-  </div>
-</div>
-<div class="col-md-6">
-  <div class="card shadow-sm h-100">
-    <div class="card-body">
-      <h5 class="card-title">🎬 YouTube Clone (Static)</h5>
-      <p class="card-text">
-        Designed and developed a <strong>static clone of YouTube</strong> using HTML, CSS, and Font Awesome. The layout replicates YouTube's navigation bar, sidebar, video grid, and categories for practice in frontend structure and UI design.
-      </p>
-      <ul>
-        <li>Responsive top navbar with search and user icons</li>
-        <li>Sidebar with sections like Home, Trending, Library</li>
-        <li>Embedded videos in a responsive grid layout</li>
-        <li>Category bar navigation using anchor links</li>
-      </ul>
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-warning text-dark">CSS</span>
-      <span class="badge bg-info text-dark">Font Awesome</span>
-      <span class="badge bg-secondary">Static Website</span>
-      <span class="badge bg-dark">UI Clone</span>
-      <a href="https://poliprasanthi.github.io/youtube_Clone/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
-
-    </div>
-  </div>
-</div>
-<div class="col-md-6">
-  <div class="card shadow-sm h-100">
-    <div class="card-body">
-      <h5 class="card-title">🌍 Travel_through_the_dreams</h5>
-      <p class="card-text">
-        Created a visually appealing <strong>static travel website</strong> that showcases popular tourist destinations in India using HTML and CSS. Includes a modern navigation bar, responsive layout, and animated flip cards for a more engaging UI.
-      </p>
-      <ul>
-        <li>Custom navigation bar with external travel links</li>
-        <li>Responsive destination grid with images and info</li>
-        <li>Animated flip cards for recommended places</li>
-        <li>Stylish layout using pure HTML and CSS</li>
-      </ul>
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-warning text-dark">CSS</span>
-      <span class="badge bg-secondary">Static Website</span>
-      <span class="badge bg-dark">Travel Theme</span>
-      <a href="https://poliprasanthi.github.io/Travel_Webpage/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
-
-    </div>
-  </div>
-</div>
-<div class="col-md-6">
-  <div class="card shadow-sm h-100">
-    <div class="card-body">
-      <h5 class="card-title">🧮 Calculator UI</h5>
-      <p class="card-text">
-        Built a <strong>simple, responsive calculator</strong> interface using HTML, CSS, and JavaScript. It supports all basic arithmetic operations and includes additional features like percentage, decimal input, and clear/delete functions.
-      </p>
-      <ul>
-        <li>Clean UI design with modern button layout</li>
-        <li>Supports operations: +, −, ×, ÷, %, decimals</li>
-        <li>Clear (AC) and backspace (←) functionality</li>
-        <li>Built with pure JavaScript logic</li>
-      </ul>
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-warning text-dark">CSS</span>
-      <span class="badge bg-success">JavaScript</span>
-      <span class="badge bg-dark">UI/UX</span>
-      <span class="badge bg-info text-dark">Responsive</span>
-      <a href="https://poliprasanthi.github.io/Calculator/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
-
-    </div>
-  </div>
-</div>
-<div class="col-md-6">
-  <div class="card shadow-sm h-100">
-    <div class="card-body">
-      <h5 class="card-title">🛒 E-Commerce Website</h5>
-      <p class="card-text">
-        Developed a feature-rich <strong>eCommerce web application</strong> with essential user and shopping functionalities. Users can browse products, register/login, add items to their cart, and simulate a checkout process.
-      </p>
-      <ul>
-        <li>User authentication: <strong>Login & Register</strong> pages</li>
-        <li>Dynamic <strong>product listing</strong> with categories</li>
-        <li><strong>Shopping cart</strong> with quantity management</li>
-        <li>Responsive layout for mobile & desktop</li>
-        <li>Modern UI with clean navigation</li>
-      </ul>
-      <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-warning text-dark">CSS</span>
-      <span class="badge bg-success">JavaScript</span>
-      <span class="badge bg-info text-dark">Responsive</span>
-      <span class="badge bg-dark">UI/UX</span>
-      <a href="https://poliprasanthi.github.io/E-commers-Website/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
-
-    </div>
-  </div>
-</div>
-      <div class="col-md-6" style="margin: 20px auto;" >
-        <div class="card shadow-sm h-100" >
-            <div class="card-body" >
-                <h5 class="card-title">Smart Poultry Farm System (IoT + DL)</h5>
-                <p class="card-text">
-                    Contributed to a smart poultry monitoring system using <strong>Arduino</strong>, <strong>CNN</strong>, and <strong>CatBoost</strong> for behavior analysis and environmental control, improving productivity and safety.
-                </p>
-                <ul>
-                    <li>Assembled and wired sensor networks for farm environment monitoring</li>
-                    <li>Collaborated with software team for model integration and testing</li>
-                    <li>Improved livestock care with real-time automation and alerts</li>
-                </ul>
-                <span class="badge bg-success">Arduino</span>
-                <span class="badge bg-primary">CNN</span>
-                <span class="badge bg-warning text-dark">CatBoost</span>
-                <span class="badge bg-dark">IoT</span>
-            </div>
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍽️ Static Food Website</h5>
+            <p class="card-text"> Created a visually appealing <strong>static food website</strong> using HTML, CSS. The site includes structured sections like menu, about, contact, and project highlights, demonstrating frontend development skills. </p>
+            <ul>
+              <li>Designed a clean static layout with HTML5 and CSS3</li>
+              <li>Added project cards, highlights, contact form, and navbar</li>
+              <li>Focused on visual hierarchy, consistency, and simple interactivity</li>
+            </ul>
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-warning text-dark">CSS</span>
+            <span class="badge bg-secondary">Static Website</span>
+            <a href="https://poliprasanthi.github.io/Food-website/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+          </div>
         </div>
       </div>
+      <div class="col-md-6 d-flex">
+  <div class="card shadow-sm h-100 project-card flex-fill">
+    <div class="card-body">
+      <h5 class="card-title">🏦 ATM Application (Java)</h5>
+      <p class="card-text">
+        Developed a console-based <strong>ATM Banking System</strong> in Java that supports account management, deposit, withdrawal, balance check, and PIN reset functionalities. It simulates real banking operations with secure PIN verification.
+      </p>
+      <ul>
+        <li>Account details view and balance check</li>
+        <li>Deposit and withdrawal with PIN verification</li>
+        <li>PIN change/reset options (forgot PIN & old PIN)</li>
+        <li>Error handling for invalid card or insufficient balance</li>
+      </ul>
+      <span class="badge bg-success">Java</span>
+      <span class="badge bg-primary">Console Application</span>
+      <span class="badge bg-warning text-dark">Banking System</span>
+      <a href="" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Code</a>
     </div>
+  </div>
+</div>
+
+      <!-- Project 3 -->
+       <div class="col-md-6 d-flex">
+    <div class="card shadow-sm h-100 project-card flex-fill">
+      <div class="card-body">
+        <h5 class="card-title">🛒 E-Commerce Website</h5>
+        <p class="card-text"> Developed a feature-rich <strong>eCommerce web application</strong> with essential user and shopping functionalities. Users can browse products, register/login, add items to their cart, and simulate a checkout process. </p>
+        <ul>
+          <li>User authentication: <strong>Login & Register</strong> pages</li>
+          <li>Dynamic <strong>product listing</strong> with categories</li>
+          <li><strong>Shopping cart</strong> with quantity management</li>
+          <li>Responsive layout for mobile & desktop</li>
+          <li>Modern UI with clean navigation</li>
+        </ul>
+        <span class="badge bg-primary">HTML</span>
+        <span class="badge bg-warning text-dark">CSS</span>
+        <span class="badge bg-success">JavaScript</span>
+        <span class="badge bg-info text-dark">Responsive</span>
+        <a href="https://poliprasanthi.github.io/E-commers-Website/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+      </div>
+    </div>
+  </div>
+  <!-- Project 4 -->
+      <div class="col-md-6 d-flex">
+  <div class="card shadow-sm h-100 project-card flex-fill">
+    <div class="card-body">
+      <h5 class="card-title">🚌 Bus Ticket Booking System (Java)</h5>
+      <p class="card-text">
+        Developed a console-based <strong>Route-Based Bus Ticket Booking System</strong> in Java. The program allows users to view buses, select seats, book tickets, and display all tickets booked in the session.
+      </p>
+      <ul>
+        <li>Displays buses with route, operator, departure, and arrival</li>
+        <li>Allows booking multiple seats with passenger names</li>
+        <li>Shows ticket confirmation and all booked tickets</li>
+        <li>Implements seat layout visualization with booked and available seats</li>
+      </ul>
+      <span class="badge bg-success">Java</span>
+      <span class="badge bg-primary">Console Application</span>
+      <span class="badge bg-warning text-dark">Bus Ticketing</span>
+      <a href="./BusTicketBooking/BusTicketBooking1.java" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Code</a>
+    </div>
+  </div>
+</div>
+
+      <div id="more-projects" class="row g-4" style="display: none;">
+  
+  <!-- Project 5 -->
+   <div class="col-md-6 d-flex">
+  <div class="card shadow-sm h-100 project-card flex-fill">
+    <div class="card-body">
+      <h5 class="card-title">🧮 Basic Calculator (Java)</h5>
+      <p class="card-text">
+        Developed a console-based <strong>Basic Calculator</strong> in Java that performs arithmetic operations (+, -, *, /, %) and allows chaining calculations until the user decides to finalize the result.
+      </p>
+      <ul>
+        <li>Supports addition, subtraction, multiplication, division, and modulus operations</li>
+        <li>Allows sequential operations with ongoing result</li>
+        <li>Handles divide/modulus by zero safely</li>
+        <li>Reset functionality after displaying final result</li>
+      </ul>
+      <span class="badge bg-success">Java</span>
+      <span class="badge bg-primary">Console Application</span>
+      <span class="badge bg-warning text-dark">Calculator</span>
+      <a href="" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Code</a>
+    </div>
+  </div>
+</div>
+ <!-- Project 6 -->
+  <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🌍 Travel_through_the_dreams</h5>
+            <p class="card-text"> Created a visually appealing <strong>static travel website</strong> that showcases popular tourist destinations in India using HTML and CSS. Includes a modern navigation bar, responsive layout, and animated flip cards for a more engaging UI. </p>
+            <ul>
+              <li>Custom navigation bar with external travel links</li>
+              <li>Responsive destination grid with images and info</li>
+              <li>Animated flip cards for recommended places</li>
+              <li>Stylish layout using pure HTML and CSS</li>
+            </ul>
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-warning text-dark">CSS</span>
+            <span class="badge bg-secondary">Static Website</span>
+            <span class="badge bg-dark">Travel Theme</span>
+            <a href="https://poliprasanthi.github.io/Travel_Webpage/ target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+  <!-- Project 7 -->
+   <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🧮 Calculator UI</h5>
+            <p class="card-text"> Built a <strong>simple, responsive calculator</strong> interface using HTML, CSS, and JavaScript. It supports all basic arithmetic operations and includes additional features like percentage, decimal input, and clear/delete functions. </p>
+            <ul>
+              <li>Clean UI design with modern button layout</li>
+              <li>Supports operations: +, −, ×, ÷, %, decimals</li>
+              <li>Clear (AC) and backspace (←) functionality</li>
+              <li>Built with pure JavaScript logic</li>
+            </ul>
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-warning text-dark">CSS</span>
+            <span class="badge bg-success">JavaScript</span>
+            <span class="badge bg-dark">UI/UX</span>
+            <span class="badge bg-info text-dark">Responsive</span>
+            <a href="https://poliprasanthi.github.io/Calculator/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+<!-- Project 8 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">🎬 YouTube Clone (Static)</h5>
+            <p class="card-text"> Designed and developed a <strong>static clone of YouTube</strong> using HTML, CSS, and Font Awesome. The layout replicates YouTube's navigation bar, sidebar, video grid, and categories for practice in frontend structure and UI design. </p>
+            <ul>
+              <li>Responsive top navbar with search and user icons</li>
+              <li>Sidebar with sections like Home, Trending, Library</li>
+              <li>Embedded videos in a responsive grid layout</li>
+              <li>Category bar navigation using anchor links</li>
+            </ul>
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-warning text-dark">CSS</span>
+            <span class="badge bg-info text-dark">Font Awesome</span>
+            <span class="badge bg-secondary">Static Website</span>
+            <span class="badge bg-dark">UI Clone</span>
+            <a href="https://poliprasanthi.github.io/youtube_Clone/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+<!-- Project 9 -->
+      <div class="col-md-6 d-flex">
+  <div class="card shadow-sm h-100 project-card flex-fill">
+    <div class="card-body">
+      <h5 class="card-title">⏰ Analog Clock</h5>
+      <p class="card-text">
+        Built a <strong>responsive analog clock</strong> using HTML, CSS, and JavaScript. The clock shows real-time hours, minutes, and seconds with moving hands and styled numbers.
+      </p>
+      <ul>
+        <li>Real-time hour, minute, and second hands</li>
+        <li>Styled numbers for a clean analog look</li>
+        <li>Pure HTML, CSS, and JS implementation</li>
+        <li>Responsive and visually appealing design</li>
+      </ul>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-warning text-dark">CSS</span>
+      <span class="badge bg-success">JavaScript</span>
+      <span class="badge bg-dark">UI/UX</span>
+      <a href="" class="btn btn-sm btn-outline-primary mt-2">Live Demo</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 10 -->
+  <div class="col-md-6 d-flex">
+    <div class="card shadow-sm h-100 project-card flex-fill">
+      <div class="card-body">
+        <h5 class="card-title">Smart Poultry Farm System (IoT + DL)</h5>
+        <p class="card-text"> Contributed to a smart poultry monitoring system using <strong>Arduino</strong>, <strong>CNN</strong>, and <strong>CatBoost</strong> for behavior analysis and environmental control, improving productivity and safety. </p>
+        <ul>
+          <li>Assembled and wired sensor networks for farm environment monitoring</li>
+          <li>Collaborated with software team for model integration and testing</li>
+          <li>Improved livestock care with real-time automation and alerts</li>
+        </ul>
+        <span class="badge bg-success">Arduino</span>
+        <span class="badge bg-primary">CNN</span>
+        <span class="badge bg-warning text-dark">CatBoost</span>
+        <span class="badge bg-dark">IoT</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="view-more-btn" class="btn btn-primary">View More</button>
     </div>
   </div>
 </section>
@@ -377,113 +427,185 @@
     </div>
   </div>
 </section>
-<section id="experience" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">💼 Experience</h2>
-      <div class="card mb-4 shadow-sm border-start border-4 border-success">
-        <div class="card-body">
-            <h4 class="card-title">Embedded Systems Intern – Ekalavya Innovative Solutions Pvt. Ltd.</h4>
-            <h6 class="text-muted">1 Month Internship | Tirupati, India</h6>
-            <p class="card-text">
-              • Gained hands-on experience in embedded systems design including PCB layout and circuit simulation.<br>
-              • Worked with Arduino and sensor interfacing for real-time applications.<br>
-              • Strengthened Embedded C programming and troubleshooting skills through practical tasks and hardware integration.
-            </p>
-            <span class="badge bg-dark">Embedded Systems</span>
-            <span class="badge bg-warning text-dark">PCB Design</span>
-            <span class="badge bg-success">Arduino</span>
-            <span class="badge bg-secondary">Internship</span>
-        </div>
-      </div>
-
-    <div class="card mb-4 shadow-sm border-start border-4 border-success">
-      <div class="card-body">
-        <h4 class="card-title">Java Full Stack Trainee – QSpiders Training Institute</h4>
-        <h6 class="text-muted">March 2025 – Present</h6>
-        <p class="card-text">
-          • Selected through a free incubation program and received rigorous training in Java, Spring Boot, HTML, CSS, and SQL.<br>
-          • Developed full-stack applications as part of capstone projects with guidance from senior mentors.<br>
-          • Improved backend performance and wrote clean, scalable code adhering to industry standards.
-        </p>
-        <span class="badge bg-primary">Java</span>
-        <span class="badge bg-warning text-dark">Web Technologies</span>
-        <span class="badge bg-dark">SQL</span>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm border-start border-4 border-danger">
-      <div class="card-body">
-        <h4 class="card-title">Project Contributor – Intelligent IoT-Enabled Poultry Farm System</h4>
-        <h6 class="text-muted">Jan 2025 – Apr 2025</h6>
-        <p class="card-text">
-          • Developed a smart poultry farm system integrating sensors and Arduino controllers.<br>
-          • Collaborated with software and hardware teams to implement automation using CNN and CatBoost models.<br>
-          • Enabled real-time environmental monitoring and intelligent decision-making for poultry management.
-        </p>
-        <span class="badge bg-success">IoT</span>
-        <span class="badge bg-dark">Arduino</span>
-        <span class="badge bg-primary">CNN</span>
-        <span class="badge bg-warning text-dark">CatBoost</span>
-      </div>
-    </div>
-
-
-  </div>
-</section>
 <section id="contact" class="bg-light py-5">
   <div class="container">
-    <h2 class="text-center mb-4">📬 Contact Me</h2>
+    <h2 class="text-center mb-4">Contact</h2>
 
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+    <div class="card shadow-lg border-0 mx-auto" style="max-width: 700px;">
+      <div class="card-body p-4">
+
+        <!-- Contact Form -->
+         <div>
+        <form id="contactForm" class="row g-2">
+          <div class="col-12 mb-2">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          <div class="col-12 mb-2">
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="How can I help you?" required></textarea>
+          <div class="col-12 mb-2">
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          <div class="col-12 mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Message" required></textarea>
+          </div>
+          <div class="col-12 text-center mb-3">
+            <button type="submit" class="btn btn-primary w-50">Send Message</button>
+          </div>
         </form>
+        </div>
+
+        <!-- Divider -->
+        <hr>
+
+        <!-- Admin Panel -->
+        <div class="text-center">
+          <button id="toggleAdminBtn" class="btn btn-warning mb-3">Admin Panel</button>
+        </div>
+
+        <div id="adminPanel" style="display:none;">
+          <div class="d-flex justify-content-center mb-3">
+            <div class="input-group" style="max-width: 250px;">
+              <input type="password" id="adminPassword" class="form-control" placeholder="Enter Admin Password">
+              <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mb-3">
+            <button id="viewMessagesBtn" class="btn btn-success me-2">View Messages</button>
+          </div>
+          <div id="messagesList"></div>
+        </div>
+
       </div>
     </div>
-    <div class="row mt-5 text-center">
-      <div class="col-md-4 mb-3">
-        <i class="bi bi-envelope fs-3 text-primary"></i>
-        <p class="mb-0">Email</p>
-        <p><a href="mailto:poliprasanthi2003@gmail.com">poliprasanthi2003@gmail.com</a></p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <i class="bi bi-telephone fs-3 text-success"></i>
-        <p class="mb-0">Phone</p>
-        <p>+91 9866461609</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <i class="bi bi-geo-alt fs-3 text-danger"></i>
-        <p class="mb-0">Location</p>
-        <p>Tirupati, Andhra Pradesh, India</p>
-      </div>
-    </div>
+  </div>
+</section>
+
     <div class="text-center mt-4">
       <a href="./prasanthiATS (1).pdf" class="btn btn-outline-dark btn-lg" target="_blank" download="prashanthi">
         <i class="bi bi-download me-2"></i>Download Resume
       </a>
-      <a href="./data.html" style="text-decoration-line: none; color: black;"><button style="color: 100px; background-color: aqua;border-radius: 10px; size: 50px;">View Messages</button></a>
-    </div>
+      </div>
   </div>
-</section>
-  <footer class="bg-dark text-white text-center py-3">
+    </div>
+            <div class="text-center mt-4">
+                <a href="https://www.linkedin.com/in/prasanthipoli?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-icon"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                <a href="https://github.com/PoliPrasanthi" class="social-icon"><i class="fab fa-github fa-3x"></i></a>
+            </div>
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
     &copy; 2025 P.Prasanthi. All Rights Reserved.
   </footer>
-  <script src="./portofilo.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+ <script>
+  // Initialize tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+
+  // Messages handling
+  let messages = JSON.parse(localStorage.getItem('portfolioMessages')) || [];
+  const ADMIN_PASSWORD = "Santhi@2003";
+
+  // Contact form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const timestamp = new Date().toLocaleString();
+    messages.push({name,email,subject,message,timestamp});
+    localStorage.setItem('portfolioMessages', JSON.stringify(messages));
+    alert('Message sent!');
+    document.getElementById('contactForm').reset();
+  });
+
+  // Toggle admin panel
+  document.getElementById('toggleAdminBtn').addEventListener('click', function(){
+    const adminPanel = document.getElementById('adminPanel');
+    adminPanel.style.display = adminPanel.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Toggle password visibility (eye icon)
+  document.getElementById('togglePassword').addEventListener('click', function(){
+    const passwordInput = document.getElementById('adminPassword');
+    const icon = this.querySelector('i');
+    if(passwordInput.type === "password") {
+      passwordInput.type = "text";
+      icon.classList.remove('bi-eye');
+      icon.classList.add('bi-eye-slash');
+    } else {
+      passwordInput.type = "password";
+      icon.classList.remove('bi-eye-slash');
+      icon.classList.add('bi-eye');
+    }
+  });
+
+  // View messages
+  document.getElementById('viewMessagesBtn').addEventListener('click', function(){
+    const passwordInput = document.getElementById('adminPassword');
+    const pwd = passwordInput.value;
+    if(pwd === ADMIN_PASSWORD) {
+      displayMessages();
+    } else {
+      alert('Incorrect password. Access denied.');
+    }
+    passwordInput.value = ''; // Clear input after clicking
+  });
+
+  // Display messages function
+  function displayMessages(){
+    const messagesList = document.getElementById('messagesList');
+    messagesList.innerHTML = '';
+
+    if(messages.length === 0){
+      messagesList.innerHTML = '<p>No messages yet.</p>';
+      return;
+    }
+
+    messages.forEach((msg, index) => {
+      const el = document.createElement('div');
+      el.className = 'message-item mb-3 p-3 border rounded shadow-sm';
+      el.innerHTML = `
+        <h5>${msg.subject} <small class="text-muted">- ${msg.name} (${msg.email})</small></h5>
+        <p><small class="text-muted">${msg.timestamp}</small></p>
+        <p>${msg.message}</p>
+        <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">
+          <i class="fas fa-trash me-1"></i> Delete
+        </button>
+        <hr>
+      `;
+      messagesList.appendChild(el);
+    });
+
+    // Add delete functionality
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        const idx = this.getAttribute('data-index');
+        messages.splice(idx, 1);
+        localStorage.setItem('portfolioMessages', JSON.stringify(messages));
+        displayMessages();
+      });
+    });
+  }
+  document.getElementById("view-more-btn").addEventListener("click", function () {
+    const moreProjects = document.getElementById("more-projects");
+    if (moreProjects.style.display === "none") {
+      moreProjects.style.display = "flex";
+      this.textContent = "View Less";
+    } else {
+      moreProjects.style.display = "none";
+      this.textContent = "View More";
+    }
+  });
+</script>
+
 </body>
 </html>
-
-
-
-
